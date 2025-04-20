@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- ADICIONANDO ICONE -->
-   <link rel="shortcut icon" href="">
-   <!-- CHAMANDO O CSS EXTERNO -->
-   <link rel="stylesheet" href="./src/css/style.css">
-   <title>Vinheria Agnello</title>
-</head>
-<body>
-   <div id="container">
-       <header>
-           <nav>
-               <ul>
-                   <li><a href="#">Nossa História</a></li>
-                   <li><a href="#">Vinhos</a></li>
-                   <li><a href="#">Contato</a></li>
-               </ul>
-           </nav>
-       </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ADICIONANDO ICONE -->
+    <link rel="shortcut icon" href="" />
+    <!-- CHAMANDO O CSS EXTERNO -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Vinheria Agnello</title>
+  </head>
+  <body>
 
-       <div id="conteudo">
-           <main>
-               <article class="produto">
-                   <img src="./src/assets/Vinho-hungaro.jpeg" alt=""/>
-                   <h3>Vinho Doce</h3>
-                   <p>Origem: Hungria.<br>Uva: Furmin.</p>
-                   <button type="submit">Veja mais</button>
-               </article>
-   
-               <article class="produto">
-                   <img src="./src/assets/Vinho-laranja.jpeg"alt=""/>
-                   <h3>Vinho Laranja</h3>
-                   <p>Origem: Geórgia.<br>Uva: Rkatsiteli.</p> 
-                   <button type="submit">Veja mais</button>
-               </article>
-   
-               <article class="produto">
-                   <img src="./src/assets/Vinho-rose.jpeg" alt=""/>
-                   <h3>Espumante Rosé</h3>
-                   <p>Origem: Brasil.<br>Uva: Chardonnay.</p>               
-                   <button type="submit">Veja mais</button>
-               </article>
-   
-               <article class="produto">
-                   <img src="./src/assets/Vinho-seco.jpeg" alt=""/>
-                   <h3>Vinho Seco</h3>
-                   <p>Origem: Itália.<br>Uva: Nebbiolo.</p>
-                   <button type="submit">Veja mais</button>
-               </article>
-   
-           </main>
-           <aside>
-               <h2>Filtros</h2>
-               <input type="text" placeholder="Pesquisar"/>
-               <div class="filtro">
-                   <h3>Categorias</h3>
-                   <ul>
-                       <li><a href="#">Vinhos brancos</a></li>
-                       <li><a href="#">Vinhos tintos</a></li>
-                       <li><a href="#">Vinhos espumantes</a></li>
-                       <li><a href="#">vinhos rose</a></li>
-                   </ul>
-               </div>
-   
-               <div class="filtro">
-                   <input type="range" min="0" max="1000" value="500"/>
-               </div>
-   
-               <div class="filtro">
-                   <h3>Marcas</h3>
-                   <ul>
-                       <li><a href="#">Marca A</a></li>
-                       <li><a href="#">Marca B</a></li>
-                       <li><a href="#">Marca C</a></li>
-                   </ul>
-               </div>
-           </aside>       
-       </div>
-       <footer>
-           <div class="footer-content">
-               <div id="contato">
-                   <h3>Contato</h3>
-                   <p>Email:contato@email.com</p>
-                   <p>Telefone: (11)5555-5555</p>
-               </div>
-               <div id="redes-sociais">
-                   <h3>Redes Sociais</h3>
-                   <ul>
-                       <li><a href="#">Facebook</a></li>
-                       <li><a href="#">Instagram</a></li>
-                       <li><a href="#">Twiter-X</a></li>
-                   </ul>
-                   <div>
-                       <p>&copy;-2025 -todos os direitos reservados</p>
-                   </div>
-               </div>
-           </div>
-       </footer>
+    <!-- Pop-up e overlay -->
+  <div id="overlay">
+    <div id="popup">
+      <h2>Você tem 18 anos ou mais?</h2>
+      <button id="btn-sim" onclick="verificarIdade(true)">Sim</button>
+      <button id="btn-nao" onclick="verificarIdade(false)">Não</button>
+    </div>
+  </div>
+
+    <div id="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Nossa História</a></li>
+            <li><a href="#">Vinhos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="conteudo">
+        <main>
+          <article class="produto">
+            <img src="./src/assets/Vinho-hungaro.jpeg" alt="" />
+            <h3>Vinho Doce</h3>
+            <p>Origem: Hungria.<br />Uva: Furmin.</p>
+            <button type="submit">Veja mais</button>
+          </article>
+
+          <article class="produto">
+            <img src="./src/assets/Vinho-laranja.jpeg" alt="" />
+            <h3>Vinho Laranja</h3>
+            <p>Origem: Geórgia.<br />Uva: Rkatsiteli.</p>
+            <button type="submit">Veja mais</button>
+          </article>
+
+          <article class="produto">
+            <img src="./src/assets/Vinho-rose.jpeg" alt="" />
+            <h3>Espumante Rosé</h3>
+            <p>Origem: Brasil.<br />Uva: Chardonnay.</p>
+            <button type="submit">Veja mais</button>
+          </article>
+
+          <article class="produto">
+            <img src="./src/assets/Vinho-seco.jpeg" alt="" />
+            <h3>Vinho Seco</h3>
+            <p>Origem: Itália.<br />Uva: Nebbiolo.</p>
+            <button type="submit">Veja mais</button>
+          </article>
+        </main>
+        <aside>
+          <h2>Filtros</h2>
+          <input type="text" placeholder="Pesquisar" />
+          <div class="filtro">
+            <h3>Categorias</h3>
+            <ul>
+              <li><a href="#">Vinhos brancos</a></li>
+              <li><a href="#">Vinhos tintos</a></li>
+              <li><a href="#">Vinhos espumantes</a></li>
+              <li><a href="#">vinhos rose</a></li>
+            </ul>
+          </div>
+
+          <div class="filtro">
+            <input type="range" min="0" max="1000" value="500" />
+          </div>
+
+          <div class="filtro">
+            <h3>Marcas</h3>
+            <ul>
+              <li><a href="#">Marca A</a></li>
+              <li><a href="#">Marca B</a></li>
+              <li><a href="#">Marca C</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <div id="contato">
+            <h3>Contato</h3>
+            <p>Email:contato@email.com</p>
+            <p>Telefone: (11)5555-5555</p>
+          </div>
+          <div id="redes-sociais">
+            <h3>Redes Sociais</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twiter-X</a></li>
+            </ul>
+            <div>
+              <p>&copy;-2025 -todos os direitos reservados</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+
+  </body>
+</html>
