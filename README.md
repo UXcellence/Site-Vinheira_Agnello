@@ -63,7 +63,7 @@ Site-Vinheira_Agnello-main/
 
 2. Navegue até a pasta do projeto:
    ```bash
-   cd Site-Vinheira_Agnello-main/Vinheria
+   cd Site-Vinheira_Agnello
    ```
 
 3. Abra o arquivo `index.html` no seu navegador.
