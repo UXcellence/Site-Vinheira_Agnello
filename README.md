@@ -58,7 +58,7 @@ Site-Vinheira_Agnello-main/
 
 1. Clone ou baixe o repositório:
    ```bash
-   git clone https://github.com/Vinheria/FRONT-END.git
+   git clone https://github.com/UXcellence/Site-Vinheira_Agnello.git
    ```
 
 2. Navegue até a pasta do projeto:
